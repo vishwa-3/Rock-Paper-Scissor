@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">     
+        <div class="heading">ROCK PAPER SCISSOR</div>
+        <div class="container">
+            <div class="select-container">
+                <img src="rock.png" width="120px" onclick="player('Rock')">
+                <img src="paper.png" width="120px" onclick="player('Paper')">
+                <img src="scissors.png" width="120px" onclick="player('Scissor')">
+            </div>
+            <div class="result-container">
+                <div id="you">
+                    <p>YOU-<span id="point1">0</span></p>
+                    <p id="you-selected"></p>
+                </div>
+                <div id="bot">
+                    <p><span id="point2">0</span>-BOT</p>
+                    <p id="bot-selected"></p>
+                </div>
+            </div>
+            <div id="win-statement"></div>
+        </div>   
+    </div>
+    <script src="rockpaperscissor.js"></script>
+</body>
+</html>

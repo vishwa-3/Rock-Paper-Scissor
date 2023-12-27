@@ -1,0 +1,104 @@
+html{
+    height: 100vh;
+}
+
+*{
+    color: white;
+    font-family: 'Aboreto', cursive;
+}
+
+body{
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(bg.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.main{
+    height: 600px;
+    width: 400px;
+}
+
+.heading{
+    width: 400px;
+    height: 100px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+
+
+.container{
+    height: 500px;
+    width: 400px;
+    background: linear-gradient(rgba(255,255,255,.1),rgba(255, 255, 255, 0.005));
+    border: 2px solid  rgba(255,255,255,.3);
+    border-right: 2px solid  rgba(255,255,255,.1);
+    border-bottom: 2px solid  rgba(255,255,255,.1);
+    box-shadow: 0px 25px 45px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    border-radius: 20px;
+    backdrop-filter: blur(7px);
+}
+
+.select-container{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.select-container > img:hover{
+    transition: all .1s;
+    transform: scale(.95);
+    opacity: .9;
+}
+
+.select-container > img:active{
+    transform: scale(.9);
+    opacity: .6;
+}
+
+.result-container{
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 30px;
+}
+
+span{
+    font-weight: bold;
+}
+
+#win-statement{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+
+@keyframes winaini{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+.win{
+    animation:winaini;
+    animation-iteration-count: 1;
+    animation-timing-function:ease-in;
+    animation-duration: .1s;
+}
+

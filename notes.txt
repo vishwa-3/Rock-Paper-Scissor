@@ -1,0 +1,21 @@
+ROCK PAPER SCISSOR
+
+HTML:
+    1. Main Container -> select-container, result-container and win-statement
+    2. select-container -> rock paper scissor images with onclick player() function.
+    3. result-container -> player and bot selection's and point's
+    4. win-statement
+
+JS:
+    1. Use getElementById() to select the id's
+    2. create 'selection' array
+    3. set point1 and point2 to 0 by default
+    4. player(input) -> display the 'input' of player and bot (bot -> 'random' input)
+        if both are equal then 'TIE'
+        else if 
+            player is 'rock' and bot is 'scissor' or
+            player is 'paper' and bot is 'rock' or 
+            player is 'scissor' and bot is 'paper' then 
+            player 'WIN' and increment the 'point1' by 1 (player point)
+        else bot 'WIN' and increment the 'point2' by 1 (bot point)
+        
